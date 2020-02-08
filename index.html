@@ -2,25 +2,29 @@
 <html lang="en">
 
 <head>
-
+  <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Grayscale - Start Bootstrap Theme</title>
-
+  <meta name="description" content="Site du mariage d'Iris et JeanMi">
+  <meta name="author" content="JeanMi">
+  <title>Mariage Iris et JeanMi</title>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.css" rel="stylesheet">
-
+  <link href="css/collapse.css" rel="stylesheet">
+  <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/timeline.css" rel="stylesheet">
+  <link href="css/timeline2.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -28,21 +32,29 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Mariage Iris & JeanMi</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
-        <i class="fas fa-bars"></i>
+        <i class="fa fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Bienvenue</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#daytimeline">Programme</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#accomodation">Dormir</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#come">Venir</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#gift">Offrir</a>
           </li>
         </ul>
       </div>
@@ -53,9 +65,8 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        <!--<img class="img-fluid" src="img/logo_ij.png" alt="">-->
+        <a class=" nav-link js-scroll-trigger" href="#about" style="position: absolute; bottom: 0; "><i class="fa fa-arrow-down fa-3x"></i></a>
       </div>
     </div>
   </header>
@@ -65,43 +76,232 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <h2 class="text-white mb-4">Bienvenue !</h2>
+          <p class="text-white-50">Bienvenue sur le site du mariage d'Iris et JeanMi. </br>
+            Nous aurons le bonheur de célébrer notre union le </br><b style="font-size: 30px">31 octobre 2020</b></br>
+            au château de Miremont en Auvergne. </br>
+            Votre présence étant indispensable pour une journée réussie, vous trouverez ici toutes les information pour
+            organiser votre venue.
+          </p>
         </div>
       </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
+      <img src="img/chateau.png" class="img-fluid" alt="">
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
+  <!-- Timeline Section -->
+  <section id="daytimeline" class="bg-light">
     <div class="container">
-
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+      <div class="text-center">
+        <h2></br>Déroulement de la journée</h2></br>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-timeline">
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-university"></i>
+                </div>
+                <div class="inner-content">
+                  <h3 class="title">13h45 - Mairie</h3>
+                  <p class="description">
+                    Le "Oui" officiel à la mairie de Cournon d'Auvergne.</br>
+                    Place de la Mairie, 63800 Cournon d'Auvergne.</br>
+                    <a href="geo:45.742119, 3.199448">lien GPS</a> <a href="https://goo.gl/maps/9kQdRHbDqeQ2P9Ys6">lien maps</a>
+                    <!-- voir https://codepen.io/colinlord/pen/jWbELE -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="inner-content">
+                  <h3 class="title">15h30 - Accueil</h3>
+                  <p class="description">
+                    Après la signature, nous vous accueillerons au </br>
+                    château de Miremont, 63880 Miremont.</br>
+                    <a href="geo:45.902030, 2.704829">lien GPS</a> <a href="https://g.page/ChateaudeMiremont?share">lien maps</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-heart"></i>
+                </div>
+                <div class="inner-content">
+                  <h3 class="title">16h - Ceremonie laïque</h3>
+                  <p class="description">
+                    Le grand "Oui". Joignez-vous à nous pour célébrer notre union au cours d'une cérémonie à notre
+                    image, dans ce lieu merveilleux. </br> <a href="https://www.chateau-miremont.com" > https://www.chateau-miremont.com </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-glass" aria-hidden="true"></i>
+                </div>
+                <div class="inner-content">
+                  <h3 class="title">17h30 - Cocktail</h3>
+                  <p class="description">
+                    Profitez du cocktail pour visiter le château et le domaine, prendre des photos, et partager une coupe
+                    avec les jeunes mariés.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-cutlery"></i>
+                </div>
+                <div class="inner-content">
+                  <h3 class="title">20h - Repas placé</h3>
+                  <p class="description">
+                    Sans quitter le domaine, nous dînerons ensuite dans la salle de la Métairie, qui se transformera
+                    enfin en piste de danse.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-cutlery"></i>
+                </div>
+                <div class="inner-content">
+                  <h3 class="title">10h - Brunch</h3>
+                  <p class="description">
+                    Restez avec nous le lendemain, un brunch sera organisé sur place.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Hebergement Section -->
+  <section id="accomodation" class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2></br>Hébergement</h2></br>
+        <p>De nombreux hébergements sont disponibles à proximité. Une navette est prévue pendant la soirée.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div row align-items-center no-gutters mb-4 mb-lg-5>
+
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header text-center" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed " data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="false" aria-controls="collapseOne">
+                  Hôtels
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Informations bientôt disponibles.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header text-center" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Chambres d'hôtes
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                  Informations bientôt disponibles.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header text-center" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Village vacances, Chalets, Campings
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                  Informations bientôt disponibles.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header text-center" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="false" aria-controls="collapseFour">
+                    Gîtes et meublés
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    Informations bientôt disponibles.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </br></br>
+  </section>
+
+  <!-- itineraire Section -->
+  <section id="come" class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2></br>Comment venir</h2></br>
+        <p>Quel que soit votre moyen de transport, vous trouvez ici les informations pour nous rejoindre facilement.</p>
+      </div>
+    </div>
+    <div class="container">
 
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <img class="img-fluid" src="img/mairie_p.jpg" alt="">
         </div>
         <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
+          <div class="projects-section  bg-bert_ text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                <h4 class="text-black">La Mairie</h4>
+                <p class="mb-0 text-black">
+                  Il y a des parkings autour de la mairie, et un parking place Joseph Gardet. <a href="geo:45.742119, 3.199448">lien GPS</a> <a href="https://goo.gl/maps/9kQdRHbDqeQ2P9Ys6">lien maps</a></br>
+                  En train : gare de Clermont Ferrand puis Bus C/22, arret J. Gardet <a href="www.t2c.fr">www.t2c.fr</a> </br>
+                  En avion : Aeroport d'Aulnat, puis bus <a href="https://www.clermont-aeroport.com">https://www.clermont-aeroport.com</a> </br>
+                  Et sinon, on s'arrange toujours !  </p> 
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -112,14 +312,17 @@
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <img class="img-fluid" src="img/chateau_p.jpg" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
+          <div class="projects-section  bg-blue_ text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                <h4 class="text-black">Le Château</h4>
+                <p class="mb-0 text-black">
+                  Le château de Miremont dispose de nombreuses places de parking. </br>
+                  Nous organiserons des covoiturages depuis la Mairie. </br>
+                  <a href="geo:45.902030, 2.704829">lien GPS</a> <a href="https://g.page/ChateaudeMiremont?share">lien maps</a></p> 
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -130,19 +333,72 @@
     </div>
   </section>
 
+  <!-- cadeaux Section -->
+  <section id="gift" class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2></br>Faites nous partir, faites nous rester.</h2></br>
+        <p>Notre plus beau cadeau sera votre présence. Toutefois, si vous voulez contribuer à la concrétisation de nos
+          futurs projets, vous pouvez faire fleurir nos rêves d’évasion.</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/maison_p.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="projects-section  bg-bert_ text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-black">La vie quotidienne</h4>
+                <p class="mb-0 text-black">
+                  Cette cagnotte sera utilisée pour améliorer et installer notre intérieur : mobilier, vaiselle, Wok, chaise suspendue... et les projets du quotidien : les rollers et le ski ... des livres et des robots.</br>
+                  Lien vers les cagnottes bientôt disponible
+                </p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/ecosse_p.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="projects-section bg-blue_ text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-black">Le voyage de noces</h4>
+                <p class="mb-0 text-black">
+                  Nous voulons voir le monde !
+                  Des aurores boréales aux baleines, en passant par la route de la soie...</br>
+                  Lien vers les cagnottes bientôt disponible</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="text-center">
+        <h2></br>A bientôt !</h2></br>
+      </div>
+    </div>
+  </section>
+
   <!-- Signup Section -->
   <section id="signup" class="signup-section">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-          </form>
 
         </div>
       </div>
@@ -152,64 +408,15 @@
   <!-- Contact Section -->
   <section class="contact-section bg-black">
     <div class="container">
-
       <div class="row">
 
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-
-    </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyleft <span class="copyleft">&copy;</span> Iris et JeanMi 2020
     </div>
   </footer>
 
@@ -222,6 +429,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+
 
 </body>
 

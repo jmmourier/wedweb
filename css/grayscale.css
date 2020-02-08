@@ -90,7 +90,10 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  /*background: linear-gradient(to bottom, rgba(22, 22, 22, 0.0) 0%, rgba(22, 22, 22, 0.6) 100%, #161616 100%), url("../img/P1360640_a.jpg");*/
+  /*background: rgb(0,0,0);*/
+  background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 66%, rgba(0,0,0,0.5) 100%), url("../img/P1360640_web.jpg");
+  /* background: url("../img/P1360640_a.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -164,7 +167,8 @@
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background: linear-gradient(to bottom, #161616 0%, rgb(102, 69, 69) 0%, rgba(22, 22, 22, 0.8) 70%);
+  /*background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 0%, rgba(22, 22, 22, 0.8) 100%);*/
 }
 
 .about-section p {
@@ -172,11 +176,11 @@
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 0.1rem 0;
 }
 
 .projects-section .featured-text {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -187,13 +191,13 @@
 }
 
 .projects-section .project-text {
-  padding: 3rem;
+  padding: 1rem;
   font-size: 90%;
 }
 
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 1rem;
   }
   .projects-section .project-text hr {
     border-color: #64a19d;
@@ -204,7 +208,7 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/volcanoes_ClaraMd_de_Pixbay.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -284,6 +288,14 @@ a:focus, a:hover {
   background-color: #161616 !important;
 }
 
+.bg-bert_ {
+  background-color: #7ee27e !important;
+}
+
+.bg-blue_ {
+  background-color: #5974ca !important;
+}
+
 .bg-primary {
   background-color: #64a19d !important;
 }
@@ -294,4 +306,10 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+
+
+.copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
 }
